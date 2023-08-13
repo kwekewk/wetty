@@ -19,7 +19,7 @@ services:
   web:
     image: nginx
     volumes:
-      - ./conf/nginx.template:/etc/nginx/conf.d/wetty.template
+      - ./conf/:/etc/nginx/conf.d/wetty.template
     ports:
       - '80:80'
     environment:
